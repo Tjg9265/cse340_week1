@@ -2,21 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <title><%= title %> | cse Motors</title>
+    <link rel="icon" type="image/png" href="/images/site/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="CSE Motors-Your trusted source for quality vehicles and automotice services.">
+    <meta property="og:title" content="CSE Motors">
+    <meta property="og:description" content="Your trusted source for quality vehicles and automotive services.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#004080">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="top-header">
+  <div class="header container">
+    <span class="CSE Motors">
+        <img src="images/icon.png" alt="CSE Motors Logo" class="logo">
+        <a href="/" title="Return to home page">CSE Motors</a>
+    </span>
+    <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+  <div id="tools">
+    <a title="Click to log in" href="/account/login">My Account</a>
+  </div>
+</header>
 
     <main>
         <section>
@@ -25,9 +39,15 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Your Name</p>
-    </footer>
+    <% const d = new Date(); let year = d.getFullYear(); %>
+<footer>
+  <img src="/images/icon.png" alt="CSE Motors Logo" class="footer-logo">
+  <p class="copyright">&copy; <%= year %>, CSE 340 App</p>
+  <ul class="footer-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/Contact">Contact</a></li>
+  </ul>
+</footer>
 
     <script src="scripts/scripts.js"></script>test
 </body>
