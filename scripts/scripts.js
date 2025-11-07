@@ -15,4 +15,4 @@ magicBtn?.addEventListener('click', () => {
     "🌟 Adventure awaits! 🌟" 
     ];
     magicArea.testContent = messages[Math.floor(Math.random() * messages.length)];
-});
+});test
