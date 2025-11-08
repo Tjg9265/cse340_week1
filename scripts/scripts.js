@@ -1,18 +1,25 @@
+// Toggle hamburger menu
 const hamburger = document.getElementById('hamburger');
 const navUl = document.querySelector('nav ul');
-hamburger?.addEventListener('click', () => {
-    navUl.classList.toggle('show');
-});
 
+if (hamburger && navUl) {
+  hamburger.addEventListener('click', () => {
+    navUl.classList.toggle('show');
+  });
+}
+
+// Magic button functionality
 const magicBtn = document.getElementById('magicBtn');
 const magicArea = document.getElementById('magicArea');
 
-magicBtn?.addEventListener('click', () => {
+if (magicBtn && magicArea) {
+  magicBtn.addEventListener('click', () => {
     const messages = [
-    "✨ Surprise! Check our specials! ✨",
-    "🚗 New cars just arrived! 🚗",
-    "🎉 Enjoy your visit! 🎉",
-    "🌟 Adventure awaits! 🌟" 
+      "✨ Surprise! Check our specials! ✨",
+      "🚗 New cars just arrived! 🚗",
+      "🎉 Enjoy your visit! 🎉",
+      "🌟 Adventure awaits! 🌟"
     ];
-    magicArea.testContent = messages[Math.floor(Math.random() * messages.length)];
-});test
+    magicArea.textContent = messages[Math.floor(Math.random() * messages.length)];
+  });
+}
