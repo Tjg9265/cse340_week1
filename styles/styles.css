@@ -190,10 +190,25 @@ main {
 
 footer {
   background: #00264d;
-  color: white;
+  color: white; /* ensures all text is white */
   text-align: center;
   padding: 2rem;
   margin-top: 2rem;
+  font-family: "Roboto Slab", serif; /* optional for consistency */
+}
+
+footer a {
+  color: white; /* make footer links white */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #cfe7ff; /* subtle hover color */
+}
+
+footer p {
+  color: white;
 }
 
 /* Responsive Styles */
